@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: securityPractice
+  datasource:
+    url: jdbc:h2:mem:test
+  h2:
+    console:
+      enabled: true
+  security:
+    user:
+      name: test
+      password: test@123
+  app:
+    jwtSecret: mySecretKey987654321vfkvhadkfnkadjoffjadnnaksdnoiaindjaldsnlnaosdjcncalmdnclandjccaxcLKMDLsc
+    jwtExpirationMs: 300000000
+
+logging:
+  level:
+    org:
+      springframework: DEBUG
+      hibernate:
+        SQL: DEBUG
+      security: DEBUG
+    com:
+      chauri:
+        securityPractice: DEBUG
